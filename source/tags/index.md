@@ -1,8 +1,8 @@
 ---
-title: {{ title }}
-date: {{ date }}
+title: 标题
+date: 2020-08-05 14:18:22
 updated:
-type:
+type: "tags"
 comments:
 description:
 keywords:
