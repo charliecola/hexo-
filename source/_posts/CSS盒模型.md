@@ -7,7 +7,7 @@ categories: CSS
 keywords: CSS盒模型
 description: 盒模型的理解
 top_img: 
-cover:
+cover: /img/cssImg.jpeg
 comments: true
 toc:
 toc_number:
@@ -56,11 +56,11 @@ Block Formatting Context（块级格式化上下文）。
 
 1. BFC的布局规则
 
-+ 内部的Box会在垂直方向，顺序排列。
-+ Box垂直方向的距离有margin决定，相邻Box的margin会重叠。
-+ BFC的区域不会与float box重叠。
-+ BFC就是一个隔离的容器,容器里面和外面互不影响。
-+ 计算BFC的高度时,浮动元素也参与计算
+    1. 内部的Box会在垂直方向，顺序排列。
+    2. Box垂直方向的距离有margin决定，相邻Box的margin会重叠。
+    3. BFC的区域不会与float box重叠。
+    4. BFC就是一个隔离的容器,容器里面和外面互不影响。
+    5. 计算BFC的高度时,浮动元素也参与计算
 2. 创建BFC
     1. float的值不少none
     2. position的值不是static或者relative
