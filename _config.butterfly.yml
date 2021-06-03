@@ -239,7 +239,7 @@ noticeOutdate:
 # AddThis
 # https://www.addthis.com/
 addThis:
-  enable: false
+  enable: true
   pubid: 5f2a655cd190f108
 
 # Share.js
@@ -261,13 +261,12 @@ comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo
   use:
-  # - Valine
-  # - Disqus
+    - Valine
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
-  lazyload: false
-  count: false # Display comment count in post's top_img
+  lazyload: true
+  count: true # Display comment count in top_img
   card_post_count: false # Display comment count in Home Page
 
 # disqus
@@ -310,11 +309,11 @@ gitalk:
 # valine
 # https://valine.js.org
 valine:
-  appId: # leancloud application app id
-  appKey: # leancloud application app key
+  appId: 97dpQzBMJH782VDgw6uYH5YB-9Nh9j0Va # leancloud application app id
+  appKey: K1lWsxtig6EGEXan58kB4lx0 # leancloud application app key
   pageSize: 10 # comment list page size
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
-  lang: en # i18n: zh-CN/zh-TW/en/ja
+  lang: zh-CN # i18n: zh-CN/zh-TW/en/ja
   placeholder: Please leave your footprints # valine comment input placeholder (like: Please leave your footprints)
   guest_info: nick,mail,link # valine comment header info (nick/mail/link)
   recordIP: false # Record reviewer IP
@@ -367,17 +366,17 @@ twikoo:
 # --------------------------------------
 
 # Chat Button [recommend]
-# It will create a button in the bottom right corner of website, and hide the origin button
-chat_btn: false
+# 它将在网站的右下角创建一个按钮，并隐藏原点按钮
+chat_btn: true
 
-# The origin chat button is displayed when scrolling up, and the button is hidden when scrolling down
+# 向上滚动时显示“原始聊天”按钮，向下滚动时隐藏该按钮
 chat_hide_show: false
 
 # chatra
 # https://chatra.io/
 chatra:
-  enable: false
-  id:
+  enable: true
+  id: YkprBTexHfvvgqFzP
 
 # tidio
 # https://www.tidio.com/
@@ -604,11 +603,11 @@ hr_icon:
 
 # the subtitle on homepage (主頁subtitle)
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect (打字效果)
   effect: true
   # loop (循環打字)
-  loop: true
+  loop: false
   # source調用第三方服務
   # source: false 關閉調用
   # source: 1  調用搏天api的隨機語錄（簡體） https://api.btstu.cn/
@@ -616,7 +615,7 @@ subtitle:
   # source: 3  調用一句網（簡體） http://yijuzhan.com/
   # source: 4  調用今日詩詞（簡體） https://www.jinrishici.com/
   # subtitle 會先顯示 source , 再顯示 sub 的內容
-  source: false
+  source: 2
   # 如果有英文逗號' , ',請使用轉義字元 &#44;
   # 如果有英文雙引號' " ',請使用轉義字元 &quot;
   # 開頭不允許轉義字元，如需要，請把整個句子用雙引號包住
@@ -642,7 +641,7 @@ aside:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: https://github.com/charliecola
   card_announcement:
     enable: true
     content: This is my Blog
@@ -684,7 +683,7 @@ busuanzi:
 # Time difference between publish date and now (網頁運行時間)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
-  enable: false
+  enable: true
   publish_date: 6/7/2018 00:00:00
   ##网页开通时间
   #格式: 月/日/年 时间
@@ -810,7 +809,7 @@ baidu_push: false
 
 # https://instant.page/
 # prefetch (預加載)
-instantpage: false
+instantpage: true
 
 # https://github.com/vinta/pangu.js
 # Insert a space between Chinese character and English character (中英文之間添加空格)
@@ -821,9 +820,9 @@ pangu:
 # Lazyload (圖片懶加載)
 # https://github.com/verlok/lazyload
 lazyload:
+  enable: true
+  post: /img/loading.gif
   # enable: true
-  # post: /img/loading.gif
-  enable: false
   field: site # site/post
   placeholder:
   blur: false
